@@ -1,0 +1,39 @@
+.contact-form__heading {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form__group{
+    display: flex;
+    margin-bottom: 15px;
+}
+.form__group-title{
+    margin-right: 30%;
+}
+
+.form__input--text input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: left;
+    }
+
+.form__group-content{
+    text-align: left;
+    }
+.form__input--text textarea{
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    font-size: 18px;
+}

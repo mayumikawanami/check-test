@@ -1,0 +1,24 @@
+.register-form__content {
+    background: #F1ECE7;
+    ;
+}
+
+.register-form__heading {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form {
+    background: #FFFFFF;
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+}
+.header-nav__item{
+position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
