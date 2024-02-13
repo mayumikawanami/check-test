@@ -1,4 +1,4 @@
-<?phpexit
+<?php
 
 return [
 

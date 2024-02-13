@@ -1,3 +1,9 @@
+.contact-form__inner {
+    margin: 32px auto 0;
+    width: 100%;
+    font-size: 16px;
+}
+
 .contact-form__heading {
     margin: 0 auto;
     padding-top: 20px;
@@ -10,22 +16,32 @@
 }
 
 .form__group{
-    display: flex;
-    margin-bottom: 15px;
+    display: grid;
+    align-items: center;
+    margin-top: 32px;
+    grid-template-columns: 1fr 2fr;
 }
 .form__group-title{
     margin-right: 30%;
 }
 
-.form__input--text input{
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    text-align: left;
+.form__input--text-name,
+.form__input--text-tell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 32px;
+}
+
+.form__input--text-name {
+    width: 100%;
     }
 
 .form__group-content{
-    text-align: left;
+    padding: 8px 16px;
+    background-color: #F4F4F4;
+    color: #BEB1A6;
     }
 .form__input--text textarea{
     margin-left: 40px;
@@ -36,4 +52,59 @@
     width: 100%;
     max-width: 410px;
     font-size: 18px;
+}
+
+.form__label--required
+{
+    color: #FF9494;
+}
+
+.form__input--radio{
+    display: flex;
+    justify-content: left;
+    margin-right: 64px;
+}
+
+.form__input--text-tell{
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.form__input--text-detail{
+    padding: 8px 16px;
+    height: 144px;
+    background-color: #F4F4F4;
+    color: #BEB1A6;
+}
+
+.form__button{
+    margin: 32px auto 0;
+}
+
+.form__item-select{
+    padding: 8px 16px;
+    width: 50%;
+    background-color: #F4F4F4;
+    color: #BEB1A6;
+}
+
+.form__input--text-select::after {
+    position: absolute;
+    top: 79%;
+    left: 57%;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #BEB1A6;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    content: "";
+    transform: translateY(-50%);
+}
+
+/* エラーメッセージ */
+.form__error {
+    margin-top: 8px;
+    color: #FF9494;
+
+    grid-column: 2;
 }

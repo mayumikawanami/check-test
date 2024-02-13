@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Actions\Fortify\CreateNewUser;
-use App\Http\Requests\UserRequest;
+use App\Http\Requests\LoginRequest;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
 use App\Actions\Fortify\UpdateUserProfileInformation;
@@ -43,7 +43,6 @@ class FortifyServiceProvider extends ServiceProvider
 
             return Limit::perMinute(10)->by($email . $request->ip());
         });
-        Fortify::confirmPasswordView(null);
     }
 
 

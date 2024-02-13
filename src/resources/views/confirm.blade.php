@@ -9,14 +9,14 @@
         <div class="contact-form__heading">
             <h2>Confirm</h2>
         </div>
-        <form class="form" action="/contacts/confirm" method="post">
+        <form class="form" action="/thanks" method="post">
             @csrf
             <div class="confirm-table">
                 <table class="confirm-table__inner">
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">お名前</th>
                         <td class="confirm-table__text">
-                            {{ $contact['last_name'] }}　{{ $contact['first_name'] }}
+                            {{ $contact['last_name'] }}  {{ $contact['first_name'] }}
                         </td>
                     </tr>
                     <tr class="confirm-table__row">

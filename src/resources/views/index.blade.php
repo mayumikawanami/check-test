@@ -9,7 +9,8 @@
         <div class="contact-form__heading">
             <h2>Contact</h2>
         </div>
-        <form class="form" action="/contacts/confirm" method="post">
+        <div class="contact-form__inner">
+        <form class="form" action="/confirm" method="post">
             @csrf
             <div class="form__group">
                 <div class="form__group-title">
@@ -17,7 +18,7 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--text-name">
                         <input type="text" name="last_name" placeholder="例:山田" value="{{ old('last_name') }}" />
                         <input type="text" name="first_name" placeholder="例:太郎" value="{{ old('first_name') }}"/>
                     </div>
@@ -55,7 +56,7 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--text-email">
                         <input type="email" name="email" placeholder="例:test@exsmple.com" value="{{ old('email') }}" />
                     </div>
                 </div>
@@ -71,7 +72,7 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--text-tell">
                         <input type="tell" name="tell_part1" placeholder="080" value="{{ old('tell_part1') }}" />
                         -
                         <input type="tell" name="tell_part2" placeholder="1234" value="{{ old('tell_part2') }}" />
@@ -123,7 +124,7 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--text-select">
                         <select class="form__item-select" name="category_id">
                             <option value="">選択してください</option>
                             @foreach($categories as $category)
@@ -146,7 +147,7 @@
                     <span class="form__label--required">※</span>
                 </div>
                 <div class="form__group-content">
-                    <div class="form__input--text">
+                    <div class="form__input--text-detail">
                         <input type="textarea" name="detail" placeholder="お問い合わせ内容をご記載ください" value="{{ old('detail') }}"/>
                     </div>
                 </div>
